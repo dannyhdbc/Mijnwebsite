@@ -1,0 +1,334 @@
+<!-- Voeg deze link alleen toe als je niet in Google Sites werkt -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Header sectie met kleurverloop en golvende overgang -->
+<div id="form" style="text-align: center; background: linear-gradient(135deg, #38a89d, #1d77ef); color: #fff; padding: 60px 20px; font-family: 'Inter', sans-serif; position: relative;">
+    <h1 style="font-size: 2.5em; margin-bottom: 10px; font-weight: 700;">Verkeer genereren is pas het begin</h1>
+    <h2 style="font-size: 1.8em; font-weight: 400; margin-bottom: 30px;">HDBC maakt landingspagina's die écht converteren</h2>
+    <p style="font-size: 1.2em; margin-bottom: 50px; font-weight: 400;">Dé specialist in landingspagina's met geavanceerde tracking</p> 
+
+    <!-- Call-to-Action Formulier Overlay -->
+    <form action="https://script.google.com/macros/s/AKfycbxeUmpMpJkvecl9Oqaj_2rttl6bSVlemtH9BaYe19h27JSv5o0vy--0DCt_4_fGVsSysw/exec" method="POST" class="cta-form">
+        <h3 style="font-size: 1.5em; font-weight: 700; margin-bottom: 15px; color: #1d77ef;">Ontvang een plan op maat</h3>
+        <p style="font-size: 0.9em; margin-bottom: 15px;">Vul het formulier in en krijg helemaal <strong>gratis</strong> een op maat gemaakt plan.</p>
+
+        <input type="text" name="naam" placeholder="Naam" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;" required>
+        <input type="text" name="telefoonnummer" placeholder="Telefoonnummer" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;" required>
+        <input type="email" name="email" placeholder="Email" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;" required>
+
+        <button type="submit" style="width: 100%; background-color: #1d77ef; color: #fff; padding: 12px; border: none; border-radius: 5px; font-weight: bold; font-size: 1em; cursor: pointer;">Aanmelden</button>
+    </form>
+
+    <!-- Golfvorm aan de onderkant van de header -->
+    <svg class="golf-svg" style="position: absolute; bottom: -1px; left: 0; width: 100%; height: 80px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#fff" d="M0,256L48,245.3C96,235,192,213,288,213.3C384,213,480,235,576,240C672,245,768,235,864,224C960,213,1056,203,1152,218.7C1248,235,1344,277,1392,298.7L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+    </svg>
+</div>
+<iframe title="Addurance dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNjI5YjU4N2YtNjgwZi00NWVlLTk3MjAtZWU2Mzk1M2YxOTQ2IiwidCI6ImRhOGVlMDg0LTQ1NGEtNGRjNS05MDk0LTNkYzNhNDYwOTIyNCIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+<style>
+    /* Verwijder horizontaal scrollen */
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    /* Zorg dat alle elementen zich aan box-sizing houden */
+    *, *::before, *::after {
+        box-sizing: inherit;
+    }
+
+    /* Bovenste sectie breedte volledig op het scherm zonder horizontale scroll */
+    #form {
+        width: 100vw; /* Zorgt dat het precies 100% van het scherm inneemt */
+        max-width: 100vw; /* Verhindert dat het breder wordt dan het scherm */
+        text-align: center;
+        background: linear-gradient(135deg, #38a89d, #1d77ef);
+        color: #fff;
+        padding: 60px 20px;
+        font-family: 'Inter', sans-serif;
+        position: relative;
+        overflow: hidden; /* Voorkomt dat kinderen buiten de container gaan */
+    }
+
+    /* Responsieve styling voor het formulier */
+    .cta-form {
+        background-color: #fff;
+        color: #333;
+        max-width: 500px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+
+    /* Verberg de golfvorm op mobiele schermen */
+    @media (max-width: 768px) {
+        .golf-svg {
+            display: none;
+        }
+    }
+
+    /* FAQ sectie styling */
+    .faq-item {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .faq-item:last-child {
+        border-bottom: none;
+    }
+
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    /* Stijl voor de plus-icon om deze goed rond en gecentreerd te houden */
+    .plus-icon {
+        background-color: #0060df;
+        color: #fff;
+        width: 24px;
+        height: 24px;
+        aspect-ratio: 1; /* Verhouding breedte tot hoogte voor een perfecte cirkel */
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.1em;
+        line-height: 1; /* Zorgt ervoor dat het teken verticaal gecentreerd is */
+        text-align: center;
+        flex-shrink: 0; /* Zorgt ervoor dat de cirkel niet wordt ingedrukt op kleinere schermen */
+    }
+</style>
+
+
+
+<!-- Waarom HDBC sectie -->
+<div style="padding: 60px 20px; text-align: center; font-family: 'Inter', sans-serif; background-color: #ffffff;">
+    <h2 style="font-size: 2em; margin-bottom: 20px; font-weight: 700;">Waarom HDBC?</h2>
+    <p style="font-weight: 400; max-width: 800px; margin: 0 auto; line-height: 1.6;">
+        Veel bedrijven trekken verkeer naar hun website, maar wat gebeurt er daarna? Zonder de juiste aanpak blijven bezoekers <strong>onbenut</strong> en <strong>verdwijnt waardevolle data</strong>. Bij HDBC begrijpen we dit probleem en bieden we de
+        oplossing.
+    </p>
+</div>
+
+<!-- Wat krijg je met HDBC sectie -->
+<div style="padding: 60px 20px; text-align: center; font-family: 'Inter', sans-serif; background-color: #f9f9f9;margin-top: 0px;">
+    <h2 style="font-size: 2em; margin-bottom: 20px; font-weight: 700;">Wat krijg je met HDBC?</h2>
+    <p style="font-weight: 400; max-width: 800px; margin: 0 auto; margin-bottom: 40px;">
+        Ontdek alle voordelen die HDBC biedt om je landingspagina's en tracking naar een hoger niveau te tillen.
+    </p>
+
+    <!-- Opsomming in een flexbox voor overzicht -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1000px; margin: 0 auto;">
+
+        <!-- Punt 1 -->
+        <div style="background-color: #fff; padding: 20px; flex: 1 1 30%; min-width: 280px; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="https://img.icons8.com/ios-filled/50/0060df/bullish.png" alt="Voordeel 1" style="width: 50px; margin-bottom: 15px;">
+            <h3 style="font-size: 1.2em; font-weight: 700; color: #0060df; margin-bottom: 10px;">Geoptimaliseerde Landingspagina's</h3>
+            <p style="font-weight: 400;">Professionele landingspagina’s die niet alleen bezoekers trekken maar ook converteren.</p>
+        </div>
+
+        <!-- Punt 2 -->
+        <div style="background-color: #fff; padding: 20px; flex: 1 1 30%; min-width: 280px; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="https://img.icons8.com/ios-filled/50/0060df/graph.png" alt="Voordeel 2" style="width: 50px; margin-bottom: 15px;">
+            <h3 style="font-size: 1.2em; font-weight: 700; color: #0060df; margin-bottom: 10px;">Geavanceerde Tracking</h3>
+            <p style="font-weight: 400;">Volledige integratie van trackingpakketten om jouw klantinzichten te maximaliseren.</p>
+        </div>
+
+        <!-- Punt 3 -->
+        <div style="background-color: #fff; padding: 20px; flex: 1 1 30%; min-width: 280px; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="https://img.icons8.com/ios-filled/50/0060df/combo-chart.png" alt="Voordeel 3" style="width: 50px; margin-bottom: 15px;">
+            <h3 style="font-size: 1.2em; font-weight: 700; color: #0060df; margin-bottom: 10px;">Uitgebreide Rapportage</h3>
+            <p style="font-weight: 400;">Duidelijke en gedetailleerde rapportages om resultaten inzichtelijk te maken.</p>
+        </div>
+
+        <!-- Punt 4 -->
+        <div style="background-color: #fff; padding: 20px; flex: 1 1 30%; min-width: 280px; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="https://img.icons8.com/ios-filled/50/0060df/pixel-heart.png" alt="Voordeel 4" style="width: 50px; margin-bottom: 15px;">
+            <h3 style="font-size: 1.2em; font-weight: 700; color: #0060df; margin-bottom: 10px;">Pixel Integraties</h3>
+            <p style="font-weight: 400;">Directe integratie van pixels voor remarketing op alle grote platformen.</p>
+        </div>
+
+        <!-- Punt 5 -->
+        <div style="background-color: #fff; padding: 20px; flex: 1 1 30%; min-width: 280px; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="https://img.icons8.com/ios-filled/50/0060df/data-in-both-directions.png" alt="Voordeel 5" style="width: 50px; margin-bottom: 15px;">
+            <h3 style="font-size: 1.2em; font-weight: 700; color: #0060df; margin-bottom: 10px;">Datagedreven Beslissingen</h3>
+            <p style="font-weight: 400;">Maak gebruik van geavanceerde data-analyse om campagnes te optimaliseren.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Meest Gestelde Vragen Sectie -->
+<div style="padding: 60px 20px; text-align: center; font-family: 'Inter', sans-serif;">
+    <h2 style="font-size: 2em; margin-bottom: 20px; font-weight: 700;">Meest Gestelde Vragen</h2>
+    <p style="font-weight: 400; max-width: 800px; margin: 0 auto; margin-bottom: 40px;">
+        Heb je vragen over hoe HDBC werkt? Hieronder vind je de antwoorden op onze meest gestelde vragen.
+    </p>
+
+    <!-- FAQ Container -->
+    <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+
+        <!-- Vraag 1 -->
+        <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+            <button onclick="toggleFaq(this)" style="width: 100%; padding: 15px; text-align: left; font-size: 1.1em; font-weight: 600; border: none; background-color: transparent; cursor: pointer; outline: none; color: #0060df; display: flex; justify-content: space-between; align-items: center;">
+                Wat is een landingspagina en waarom heb ik er een nodig?
+                <span class="plus-icon">+</span>
+            </button>
+            <div class="faq-answer" style="display: none; padding: 15px; background-color: #ffffff;">
+                Een landingspagina is een specifieke pagina die is ontworpen om bezoekers naar een specifieke actie te leiden, zoals inschrijven of kopen. Het is essentieel voor het verbeteren van conversies.
+            </div>
+        </div>
+
+        <!-- Vraag 2 -->
+        <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+            <button onclick="toggleFaq(this)" style="width: 100%; padding: 15px; text-align: left; font-size: 1.1em; font-weight: 600; border: none; background-color: transparent; cursor: pointer; outline: none; color: #0060df; display: flex; justify-content: space-between; align-items: center;">
+                Wat houdt tracking precies in?
+                <span class="plus-icon">+</span>
+            </button>
+            <div class="faq-answer" style="display: none; padding: 15px; background-color: #ffffff;">
+                Tracking betekent het verzamelen van gegevens over bezoekersgedrag, zoals klikken en interacties, waarmee je inzicht krijgt in hoe bezoekers jouw site gebruiken.
+            </div>
+        </div>
+
+        <!-- Vraag 3 -->
+        <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+            <button onclick="toggleFaq(this)" style="width: 100%; padding: 15px; text-align: left; font-size: 1.1em; font-weight: 600; border: none; background-color: transparent; cursor: pointer; outline: none; color: #0060df; display: flex; justify-content: space-between; align-items: center;">
+                Hoe kan ik mijn landingspagina optimaliseren voor betere resultaten?
+                <span class="plus-icon">+</span>
+            </button>
+            <div class="faq-answer" style="display: none; padding: 15px; background-color: #ffffff;">
+                Door A/B-tests uit te voeren, de juiste call-to-actions te gebruiken en de pagina continu aan te passen op basis van data, kun je de conversies verbeteren.
+            </div>
+        </div>
+
+        <!-- Vraag 4 -->
+        <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+            <button onclick="toggleFaq(this)" style="width: 100%; padding: 15px; text-align: left; font-size: 1.1em; font-weight: 600; border: none; background-color: transparent; cursor: pointer; outline: none; color: #0060df; display: flex; justify-content: space-between; align-items: center;">
+                Wat is het voordeel van pixel-integraties?
+                <span class="plus-icon">+</span>
+            </button>
+            <div class="faq-answer" style="display: none; padding: 15px; background-color: #ffffff;">
+                Pixel-integraties helpen bij het tracken van bezoekersactiviteiten en maken remarketing mogelijk, zodat je eerdere bezoekers opnieuw kunt bereiken.
+            </div>
+        </div>
+
+        <!-- Vraag 5 -->
+        <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+            <button onclick="toggleFaq(this)" style="width: 100%; padding: 15px; text-align: left; font-size: 1.1em; font-weight: 600; border: none; background-color: transparent; cursor: pointer; outline: none; color: #0060df; display: flex; justify-content: space-between; align-items: center;">
+                Moet ik technische kennis hebben om HDBC te gebruiken?
+                <span class="plus-icon">+</span>
+            </button>
+            <div class="faq-answer" style="display: none; padding: 15px; background-color: #ffffff;">
+                Nee, ons team zorgt voor de technische opzet en implementatie. Jij kunt je richten op jouw business terwijl wij de techniek verzorgen.
+            </div>
+        </div>
+
+        <!-- Vraag 6 -->
+        <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+            <button onclick="toggleFaq(this)" style="width: 100%; padding: 15px; text-align: left; font-size: 1.1em; font-weight: 600; border: none; background-color: transparent; cursor: pointer; outline: none; color: #0060df; display: flex; justify-content: space-between; align-items: center;">
+                Kan ik mijn landingspagina aanpassen als ik al verkeer heb?
+                <span class="plus-icon">+</span>
+            </button>
+            <div class="faq-answer" style="display: none; padding: 15px; background-color: #ffffff;">
+                Ja, je kunt je landingspagina altijd optimaliseren en aanpassen om beter te converteren. Wij helpen je daarbij!
+            </div>
+        </div>
+
+        <!-- Vraag 7 -->
+        <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+            <button onclick="toggleFaq(this)" style="width: 100%; padding: 15px; text-align: left; font-size: 1.1em; font-weight: 600; border: none; background-color: transparent; cursor: pointer; outline: none; color: #0060df; display: flex; justify-content: space-between; align-items: center;">
+                Biedt HDBC ondersteuning voor meerdere trackingplatformen?
+                <span class="plus-icon">+</span>
+            </button>
+            <div class="faq-answer" style="display: none; padding: 15px; background-color: #ffffff;">
+                Ja, we ondersteunen diverse platformen zoals Google Analytics, Facebook Pixel en andere populaire trackingtools.
+            </div>
+        </div>
+
+        <!-- Vraag 8 -->
+        <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+            <button onclick="toggleFaq(this)" style="width: 100%; padding: 15px; text-align: left; font-size: 1.1em; font-weight: 600; border: none; background-color: transparent; cursor: pointer; outline: none; color: #0060df; display: flex; justify-content: space-between; align-items: center;">
+                Hoe werkt HDBC met mijn bestaande marketingstrategie?
+                <span class="plus-icon">+</span>
+            </button>
+            <div class="faq-answer" style="display: none; padding: 15px; background-color: #ffffff;">
+                Wij passen onze diensten aan op jouw strategie en zorgen dat de landingspagina’s aansluiten bij jouw doelen en branding.
+            </div>
+        </div>
+
+        <!-- Vraag 9 -->
+        <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+            <button onclick="toggleFaq(this)" style="width: 100%; padding: 15px; text-align: left; font-size: 1.1em; font-weight: 600; border: none; background-color: transparent; cursor: pointer; outline: none; color: #0060df; display: flex; justify-content: space-between; align-items: center;">
+                Kan HDBC helpen bij het opzetten van remarketingcampagnes?
+                <span class="plus-icon">+</span>
+            </button>
+            <div class="faq-answer" style="display: none; padding: 15px; background-color: #ffffff;">
+                Absoluut! We integreren pixels en trackingtools om remarketingcampagnes effectief te kunnen inzetten.
+            </div>
+        </div>
+
+        <!-- Vraag 10 -->
+        <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 15px 0;">
+            <button onclick="toggleFaq(this)" style="width: 100%; padding: 15px; text-align: left; font-size: 1.1em; font-weight: 600; border: none; background-color: transparent; cursor: pointer; outline: none; color: #0060df; display: flex; justify-content: space-between; align-items: center;">
+                Wat kost een landingspagina met HDBC?
+                <span class="plus-icon">+</span>
+            </button>
+            <div class="faq-answer" style="display: none; padding: 15px; background-color: #ffffff;">
+                De kosten zijn afhankelijk van je wensen en de benodigde functionaliteiten. Neem contact op voor een offerte op maat.
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- JavaScript voor uitklapbare FAQ met slide-down animatie -->
+<script>
+    function toggleFaq(button) {
+        const answer = button.nextElementSibling;
+        const isVisible = answer.style.display === 'block';
+
+        // Toggle de tekst van het plusteken naar minteken
+        button.querySelector('.plus-icon').textContent = isVisible ? '+' : '-';
+
+        // Slide-down animatie voor het antwoord
+        if (!isVisible) {
+            answer.style.display = 'block';
+            answer.style.maxHeight = '0';
+            answer.style.overflow = 'hidden';
+            answer.style.transition = 'max-height 0.3s ease';
+            setTimeout(() => answer.style.maxHeight = '500px', 0);
+        } else {
+            answer.style.transition = 'max-height 0.3s ease';
+            answer.style.maxHeight = '0';
+            setTimeout(() => answer.style.display = 'none', 300);
+        }
+    }
+</script>
+
+<!-- Contact knop met extra marge boven -->
+<div style="text-align: center;">
+    <a href="https://sites.google.com/view/hdbcmarketing/home#form" style="background-color: #1d77ef; color: #fff; padding: 15px 70px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: 'Inter', sans-serif; margin-top: 0px; margin-bottom: 50px; display: inline-block;">Neem contact op</a>
+</div>
+
+<!-- Contact sectie -->
+<div id="contact" style="background-color: #f5f5f5; padding: 40px; text-align: center; font-family: 'Inter', sans-serif;">
+    <h2 style="font-size: 1.9em; margin-bottom: 20px; font-weight: 700;">Neem contact op</h2>
+    <p style="font-weight: 400; max-width: 800px; margin: 0 auto;">Heb je vragen of wil je een plan op maat voor jouw bedrijf? Neem contact met ons op en wij helpen je graag verder.</p>
+
+    <div style="margin-top: 20px;">
+        <p style="font-weight: 400;">Email: <a href="mailto:danny@hdbc.nl" style="color: #4e5fdf; text-decoration: none;">danny@hdbc.nl</a></p>
+        <p style="font-weight: 400;">Telefoon: <a href="tel:+31683910510" style="color: #4e5fdf; text-decoration: none;">0683910510</a></p>
+    </div>
+</div>
+
+<!-- Footer sectie -->
+<div style="background-color: #333; color: #fff; text-align: center; padding: 20px; font-family: 'Inter', sans-serif;">
+    <p style="font-weight: 400;">&copy; 2024 HDBC. Alle rechten voorbehouden.</p>
+</div>
+
