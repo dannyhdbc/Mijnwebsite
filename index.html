@@ -239,6 +239,19 @@ img{max-width:100%;display:block}
     .mock-aside{border-left:none;border-top:1px solid var(--line-soft)}
 }
 
+/* ===== Ingesloten GDPR-checker ===== */
+.tool-frame{
+    max-width:900px;margin:0 auto;
+    background:var(--white);border:1px solid var(--line);border-radius:16px;
+    box-shadow:0 4px 40px rgba(20,22,28,.06);
+    overflow:hidden;
+}
+.tool-frame iframe{width:100%;min-height:760px;border:none;display:block}
+.tool-note{margin:18px 0 0;font-size:.9rem;color:var(--body)}
+.tool-note a{color:var(--blue);font-weight:600;text-decoration:none}
+.tool-note a:hover{text-decoration:underline}
+@media(max-width:700px){.tool-frame iframe{min-height:900px}}
+
 /* ===== Strip ===== */
 .strip{
     border-top:1px solid var(--line);
@@ -430,7 +443,7 @@ img{max-width:100%;display:block}
     <ul class="nav-links">
         <li><a href="diensten.html">Diensten</a></li>
         <li><a href="platformen.html">Platformen</a></li>
-        <li><a href="consentcheck.html">GDPR-checker</a></li>
+        <li><a href="index.html#tool">GDPR-checker</a></li>
         <li><a href="measurement-problemen.html">Measurement</a></li>
         <li><a href="#over">Over</a></li>
         <li><a href="#faq">FAQ</a></li>
@@ -444,8 +457,8 @@ img{max-width:100%;display:block}
     <h1>Weet wat elke klik <span class="serif">oplevert. Én of het mag.</span></h1>
     <p class="hero-sub">Ik richt tracking en full-funnel rapportages in, van eerste vertoning tot klant, en zorg dat dit voldoet aan de AVG/GDPR. Betrouwbare cijfers én de juiste consent.</p>
     <div class="hero-actions">
-        <a href="#plan" class="btn btn-primary">Vraag een gratis plan aan</a>
-        <a href="#compliance" class="btn btn-secondary">Lees over compliance →</a>
+        <a href="#tool" class="btn btn-primary">Start de gratis GDPR-check ↓</a>
+        <a href="#plan" class="btn btn-secondary">Vraag een gratis plan aan</a>
     </div>
 
     <!-- Voorbeeldrapportage -->
@@ -507,6 +520,19 @@ img{max-width:100%;display:block}
         </div>
     </div>
 </header>
+
+<!-- ===== Gratis GDPR-checker (embedded) ===== -->
+<section class="section" id="tool" style="padding-top:30px">
+    <div class="wrap" style="text-align:center">
+        <span class="kicker">Gratis tool</span>
+        <h2>Scan je site nu <span class="serif">gratis op AVG/GDPR-compliance.</span></h2>
+        <p class="lead" style="margin:0 auto 34px">Vul hieronder je website-adres in. De checker bezoekt je site met een schone browser, raakt de cookiebanner niet aan, en laat direct zien welke cookies en trackers er al actief zijn vóór er toestemming is gegeven.</p>
+        <div class="tool-frame">
+            <iframe src="https://gdprcheck.hdbc.nl/?embed=1" title="HDBC GDPR-checker" loading="lazy"></iframe>
+        </div>
+        <p class="tool-note">Rood oordeel? Ik los het voor je op. <a href="diensten.html">Bekijk hoe →</a></p>
+    </div>
+</section>
 
 <!-- ===== Strip ===== -->
 <div class="strip">
@@ -618,7 +644,7 @@ img{max-width:100%;display:block}
                 <p>Vul een website-adres in en zie binnen enkele minuten welke cookies en trackers al actief zijn vóórdat een bezoeker toestemming geeft.</p>
                 <div class="widget">
                     <div class="widget-head"><span>Status</span><span style="color:var(--green)">Live</span></div>
-                    <div class="wrow"><span class="dot d-green"></span><a href="consentcheck.html" style="color:inherit">Start de gratis GDPR-checker →</a></div>
+                    <div class="wrow"><span class="dot d-green"></span><a href="#tool" style="color:inherit">Start de gratis GDPR-checker →</a></div>
                 </div>
             </div>
         </div>
@@ -716,7 +742,7 @@ img{max-width:100%;display:block}
             </div>
             <div class="faq-item">
                 <button class="faq-q" onclick="toggleFaq(this)">Komt er een geautomatiseerde compliance scan?<span class="faq-icon">+</span></button>
-                <div class="faq-a"><p>Die is er al: mijn <a href="consentcheck.html">gratis GDPR-checker</a> scant een website vóór er toestemming is gegeven en laat direct zien welke cookies en trackers actief zijn.</p></div>
+                <div class="faq-a"><p>Die is er al: mijn <a href="#tool">gratis GDPR-checker</a> scant een website vóór er toestemming is gegeven en laat direct zien welke cookies en trackers actief zijn.</p></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q" onclick="toggleFaq(this)">Moet ik technische kennis hebben?<span class="faq-icon">+</span></button>
@@ -757,7 +783,7 @@ img{max-width:100%;display:block}
             <p class="footer-heading">Menu</p>
             <p><a href="diensten.html">Diensten</a></p>
             <p><a href="platformen.html">Platformen</a></p>
-            <p><a href="consentcheck.html">GDPR-checker</a></p>
+            <p><a href="#tool">GDPR-checker</a></p>
             <p><a href="measurement-problemen.html">Measurement problemen</a></p>
             <p><a href="#plan">Gratis plan</a></p>
             <p><a href="privacyverklaring.html">Privacyverklaring</a></p>
