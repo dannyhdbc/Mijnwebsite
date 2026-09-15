@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gratis GDPR-checker | AVG-compliance scan v&oacute;&oacute;r consent | HDBC</title>
+<meta name="description" content="Scan je website gratis op AVG/GDPR-compliance. De HDBC GDPR-checker laat zien welke cookies en trackers al actief zijn v&oacute;&oacute;rdat een bezoeker toestemming geeft.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://hdbc.nl/consentcheck.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hdbc.nl/consentcheck.html">
+<meta property="og:site_name" content="HDBC">
+<meta property="og:title" content="Gratis GDPR-checker | HDBC">
+<meta property="og:description" content="Scan je website gratis op AVG/GDPR-compliance v&oacute;&oacute;r consent.">
+<meta property="og:image" content="https://hdbc.nl/Logo.png">
+<meta property="og:locale" content="nl_NL">
+<link rel="icon" type="image/png" href="Logo.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "HDBC GDPR-checker",
+  "applicationCategory": "SecurityApplication",
+  "operatingSystem": "Web",
+  "url": "https://hdbc.nl/consentcheck.html",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+  "description": "Gratis tool die websites scant op AVG/GDPR-compliance v\u00f3\u00f3r er toestemming is gegeven, en rapporteert welke cookies en trackers al actief zijn."
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+    --cream:#faf8f3;--white:#ffffff;--ink:#14161c;--body:#4d5361;--muted:#7a8090;
+    --blue:#2457e6;--blue-dark:#1a43bd;--blue-soft:#e8eefc;--line:#e9e6de;--line-soft:#f0ede6;
+    --green:#1a9e6c;--red:#b3261e;--amber:#996a00;--radius:14px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;font-size:16px}
+h1,h2,h3{line-height:1.15;font-weight:700;letter-spacing:-.02em}
+a{color:var(--blue)}
+.serif{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--blue)}
+.nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:14px 5vw;background:rgba(250,248,243,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft)}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo img{width:28px;height:28px;object-fit:contain}
+.nav-logo span{font-weight:800;font-size:1.1rem;color:var(--ink)}
+.nav-links{display:flex;gap:26px;align-items:center;list-style:none}
+.nav-links a{text-decoration:none;font-size:.9rem;font-weight:500;color:var(--body)}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{background:var(--blue);color:#fff !important;padding:9px 18px;border-radius:8px;font-weight:600;font-size:.88rem !important}
+.nav-cta:hover{background:var(--blue-dark)}
+@media(max-width:800px){.nav-links li:not(.nav-cta-li){display:none}}
+.hero{text-align:center;padding:80px 5vw 60px;background:radial-gradient(1100px 460px at 50% -100px,#bfe0f5 0%,#d8ecf8 40%,rgba(250,248,243,0) 78%)}
+.hero h1{font-size:clamp(2.2rem,5vw,3.4rem);margin:0 auto 18px;max-width:780px}
+.hero p{font-size:1.1rem;color:var(--body);max-width:600px;margin:0 auto 30px}
+.btn{display:inline-block;text-decoration:none;cursor:pointer;font-weight:600;font-size:.95rem;padding:14px 28px;border-radius:9px;border:none}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue-dark)}
+.btn-secondary{background:var(--white);color:var(--ink);border:1px solid var(--line)}
+.hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.section{padding:80px 5vw}
+.wrap{max-width:1080px;margin:0 auto}
+.kicker{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:14px}
+.section h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin-bottom:16px}
+.lead{font-size:1.05rem;color:var(--body);max-width:660px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:44px}
+@media(max-width:900px){.grid3{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}}
+@media(max-width:620px){.grid3{grid-template-columns:1fr}}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.card h3{font-size:1.02rem;margin-bottom:8px}
+.card p{color:var(--body);font-size:.92rem}
+.verdict-table{width:100%;border-collapse:collapse;margin-top:20px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.verdict-table th,.verdict-table td{padding:14px 18px;text-align:left;font-size:.9rem;border-bottom:1px solid var(--line-soft)}
+.verdict-table th{background:var(--line-soft);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.verdict-table tr:last-child td{border-bottom:none}
+.pill{display:inline-block;font-weight:700;font-size:.8rem;padding:3px 10px;border-radius:99px}
+.pill-groen{background:#e3f6ee;color:var(--green)}
+.pill-rood{background:#fbe9e7;color:var(--red)}
+.pill-grijs{background:var(--line-soft);color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+.step{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px}
+.step-num{font-family:'Instrument Serif',serif;font-style:italic;font-size:2rem;color:var(--blue);display:block;margin-bottom:10px}
+.step h3{font-size:1rem;margin-bottom:6px}
+.step p{color:var(--body);font-size:.9rem}
+@media(max-width:800px){.steps{grid-template-columns:1fr}}
+.cta-band{background:var(--ink);color:#fff;border-radius:20px;padding:50px 5vw;text-align:center;max-width:1080px;margin:0 auto}
+.cta-band h2{color:#fff}
+.cta-band p{color:#c8cbd4;max-width:560px;margin:0 auto 26px}
+.faq-list{max-width:720px;margin:44px auto 0}
+.faq-item{background:var(--white);border:1px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 22px;border:none;background:none;cursor:pointer;font:inherit;font-size:.98rem;font-weight:600;color:var(--ink);text-align:left}
+.faq-icon{flex-shrink:0;color:var(--muted);font-size:1.2rem;font-weight:300;transition:transform .25s}
+.faq-item.open .faq-icon{transform:rotate(45deg);color:var(--blue)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-a p{padding:0 22px 20px;color:var(--body);font-size:.92rem}
+.footer{padding:56px 5vw 30px;border-top:1px solid var(--line)}
+.footer-grid{max-width:1080px;margin:0 auto;display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.footer-brand{display:flex;align-items:center;gap:9px;margin-bottom:12px}
+.footer-brand img{width:24px;height:24px;object-fit:contain}
+.footer-brand span{font-weight:800;font-size:1rem}
+.footer p{color:var(--body);font-size:.9rem}
+.footer-heading{font-weight:600;color:var(--ink);margin-bottom:10px;font-size:.9rem}
+.footer-contact p{margin-bottom:6px}
+.footer-bottom{max-width:1080px;margin:40px auto 0;padding-top:20px;border-top:1px solid var(--line-soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:.78rem}
+</style>
+</head>
+<body>
+<nav class="nav">
+    <a href="index.html" class="nav-logo"><img src="Logo.png" alt="HDBC logo"><span>HDBC</span></a>
+    <ul class="nav-links">
+        <li><a href="diensten.html">Diensten</a></li>
+        <li><a href="platformen.html">Platformen</a></li>
+        <li><a href="consentcheck.html">GDPR-checker</a></li>
+        <li><a href="measurement-problemen.html">Measurement</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li class="nav-cta-li"><a href="index.html#plan" class="nav-cta">Gratis plan aanvragen</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <span class="kicker">Gratis tool</span>
+    <h1>Weet in enkele minuten of je site <span class="serif">AVG/GDPR-compliant</span> is.</h1>
+    <p>De GDPR-checker bezoekt je website met een volledig schone browser, raakt de cookiebanner niet aan, en laat zien welke cookies en trackers er dan al actief zijn &mdash; nog v&oacute;&oacute;rdat een bezoeker toestemming heeft gegeven.</p>
+    <div class="hero-actions">
+        <a href="https://gdprcheck.hdbc.nl" target="_blank" rel="noopener" class="btn btn-primary">Start de gratis GDPR-check &rarr;</a>
+        <a href="#hoe-werkt-het" class="btn btn-secondary">Hoe werkt het?</a>
+    </div>
+</header>
+
+<section class="section" id="wat-controleert-hij">
+    <div class="wrap">
+        <span class="kicker">Wat de scan controleert</span>
+        <h2>Alles wat er gebeurt <span class="serif">v&oacute;&oacute;rdat</span> iemand op de banner klikt.</h2>
+        <p class="lead">Veel cookiebanners zien er compliant uit, maar op de achtergrond wordt er soms allang gemeten. De checker legt precies vast wat er al gebeurt, zonder de banner ooit aan te raken.</p>
+        <div class="grid3">
+            <div class="card">
+                <h3>Cookies</h3>
+                <p>Welke first- en third-party cookies er geplaatst worden, met categorie, eigenaar en bewaartermijn.</p>
+            </div>
+            <div class="card">
+                <h3>Trackers &amp; meetendpoints</h3>
+                <p>Meta Pixel, Google Ads, GA4, TikTok, LinkedIn, Hotjar en anderen &mdash; ook server-side varianten op een eigen subdomein.</p>
+            </div>
+            <div class="card">
+                <h3>Local- en sessionStorage</h3>
+                <p>Wat er in de browseropslag van de bezoeker terechtkomt, ook als daar geen cookie voor nodig is.</p>
+            </div>
+            <div class="card">
+                <h3>Consent management</h3>
+                <p>Welk platform er draait (Cookiebot, OneTrust, Complianz e.a.) en of Google Consent Mode of het IAB TCF-framework actief is.</p>
+            </div>
+            <div class="card">
+                <h3>Sessietest</h3>
+                <p>Na een herlading wordt gecontroleerd of GA4 een bezoeker blijft herkennen zonder dat daar toestemming voor is.</p>
+            </div>
+            <div class="card">
+                <h3>Meerdere pagina&rsquo;s</h3>
+                <p>De scanner volgt interne links en spreidt de meting over de secties van je site, in dezelfde sessie.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="padding-top:0">
+    <div class="wrap">
+        <span class="kicker">Oordeel</span>
+        <h2>Eén heldere conclusie <span class="serif">per website.</span></h2>
+        <table class="verdict-table">
+            <thead><tr><th>Oordeel</th><th>Betekenis</th></tr></thead>
+            <tbody>
+                <tr><td><span class="pill pill-groen">Compliant</span></td><td>Er wordt niets opgeslagen v&oacute;&oacute;r toestemming, of alleen functionele cookies.</td></tr>
+                <tr><td><span class="pill pill-rood">Niet compliant</span></td><td>Er worden marketing- of analyticsgegevens opgeslagen v&oacute;&oacute;r toestemming.</td></tr>
+                <tr><td><span class="pill pill-grijs">Omgeleid</span></td><td>De site stuurt door naar een ander hoofddomein; de meting zegt dan niets over de gevraagde site.</td></tr>
+                <tr><td><span class="pill pill-grijs">Scan mislukt</span></td><td>De pagina kon niet worden geladen.</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="section" id="hoe-werkt-het" style="padding-top:0">
+    <div class="wrap">
+        <span class="kicker">Hoe werkt het</span>
+        <h2>Drie stappen, <span class="serif">geen installatie.</span></h2>
+        <div class="steps">
+            <div class="step">
+                <span class="step-num">1.</span>
+                <h3>Adres invullen</h3>
+                <p>Vul je domein in op de scanpagina. Meerdere adressen tegelijk kan ook, bijvoorbeeld homepage plus contactpagina.</p>
+            </div>
+            <div class="step">
+                <span class="step-num">2.</span>
+                <h3>Scan draait live</h3>
+                <p>Een schone browser bezoekt je site zonder ooit de cookiebanner aan te klikken, en meet wat er dan al gebeurt.</p>
+            </div>
+            <div class="step">
+                <span class="step-num">3.</span>
+                <h3>Rapport direct in beeld</h3>
+                <p>Je krijgt per site een oordeel met onderbouwing: welke cookies, welke trackers en wat het betekent voor je AVG/GDPR-risico.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="padding-top:0">
+    <div class="cta-band">
+        <h2>Rood oordeel? <span class="serif" style="color:#8fb3ff">Dat los ik voor je op.</span></h2>
+        <p>Een scan laat zien wat er mis is; ik zorg dat het wordt opgelost. Van cookiebanner tot server-side tracking, ingericht en getoetst aan de AVG/GDPR.</p>
+        <a href="diensten.html" class="btn btn-primary">Bekijk compliance-diensten &rarr;</a>
+    </div>
+</section>
+
+<section class="section" id="faq">
+    <div class="wrap" style="text-align:center">
+        <span class="kicker">FAQ</span>
+        <h2>Vragen over de <span class="serif">GDPR-checker.</span></h2>
+        <div class="faq-list" style="text-align:left">
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">Is de checker echt gratis?<span class="faq-icon">+</span></button>
+                <div class="faq-a"><p>Ja. Je kunt zonder kosten een website scannen, met een dagelijkse limiet per IP-adres om misbruik te voorkomen.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">Klikt de scanner ergens op mijn cookiebanner?<span class="faq-icon">+</span></button>
+                <div class="faq-a"><p>Nee. De scanner meet bewust alleen wat er gebeurt v&oacute;&oacute;rdat een bezoeker een keuze maakt. Dat is het scenario dat juridisch telt: iemand die rondklikt en nooit toestemming geeft.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">Wat als er tags laden maar niets wordt opgeslagen?<span class="faq-icon">+</span></button>
+                <div class="faq-a"><p>Dat heet een cookieloze ping. Artikel 11.7a Telecommunicatiewet gaat over het opslaan of uitlezen van gegevens op het apparaat; wordt er niets bewaard, dan raakt dat artikel niet en telt het als conform, mits ook Consent Mode alles correct weigert.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">Is dit juridisch advies?<span class="faq-icon">+</span></button>
+                <div class="faq-a"><p>Nee. Het rapport is een technisch hulpmiddel op basis van de AVG en de Telecommunicatiewet. Voor een juridisch sluitend oordeel of een implementatietraject neem je contact op.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-grid">
+        <div>
+            <div class="footer-brand"><img src="Logo.png" alt="HDBC logo"><span>HDBC</span></div>
+            <p style="max-width:300px">Tracking en rapportages die kloppen, en die voldoen aan de AVG/GDPR.</p>
+        </div>
+        <div class="footer-contact">
+            <p class="footer-heading">Contact</p>
+            <p>E-mail: <a href="mailto:danny@hdbc.nl">danny@hdbc.nl</a></p>
+            <p>Telefoon: <a href="tel:+31683910510">06 83 91 05 10</a></p>
+        </div>
+        <div class="footer-contact">
+            <p class="footer-heading">Menu</p>
+            <p><a href="diensten.html">Diensten</a></p>
+            <p><a href="platformen.html">Platformen</a></p>
+            <p><a href="measurement-problemen.html">Measurement problemen</a></p>
+            <p><a href="index.html#plan">Gratis plan</a></p>
+            <p><a href="privacyverklaring.html">Privacyverklaring</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>&copy; 2026 HDBC. Alle rechten voorbehouden.</span>
+        <span>Tracking en rapportage. AVG/GDPR-proof.</span>
+    </div>
+</footer>
+
+<script>
+function toggleFaq(btn){
+    const item=btn.parentElement;
+    const answer=item.querySelector('.faq-a');
+    const isOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el=>{
+        el.classList.remove('open');
+        el.querySelector('.faq-a').style.maxHeight='0';
+    });
+    if(!isOpen){
+        item.classList.add('open');
+        answer.style.maxHeight=answer.scrollHeight+'px';
+    }
+}
+</script>
+</body>
+</html>
