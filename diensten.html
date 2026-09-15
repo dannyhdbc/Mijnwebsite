@@ -90,6 +90,12 @@ a{color:var(--blue)}
 .cta-band{background:var(--ink);color:#fff;border-radius:20px;padding:50px 5vw;text-align:center}
 .cta-band h2{color:#fff}
 .cta-band p{color:#c8cbd4;max-width:560px;margin:0 auto 26px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+.step{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px}
+.step-num{font-family:'Instrument Serif',serif;font-style:italic;font-size:2.2rem;color:var(--blue);display:block;margin-bottom:12px}
+.step h3{font-size:1.05rem;margin-bottom:8px}
+.step p{color:var(--body);font-size:.92rem}
+@media(max-width:800px){.steps{grid-template-columns:1fr}}
 .btn{display:inline-block;text-decoration:none;cursor:pointer;font-weight:600;font-size:.95rem;padding:14px 28px;border-radius:9px;border:none}
 .btn-primary{background:var(--blue);color:#fff}
 .btn-primary:hover{background:var(--blue-dark)}
@@ -207,6 +213,31 @@ a{color:var(--blue)}
             </div>
         </div>
 
+    </div>
+</section>
+
+<section class="section" style="padding-top:0">
+    <div class="wrap">
+        <span class="kicker">Werkwijze</span>
+        <h2>Van eerste klik naar klant, <span class="serif">in drie stappen.</span></h2>
+        <p class="lead">Een aanpak die aansluit op je bestaande marketing en tech-stack.</p>
+        <div class="steps">
+            <div class="step">
+                <span class="step-num">1.</span>
+                <h3>Plan op maat</h3>
+                <p>Ik bekijk je huidige tracking, rapportage en compliance-status, en lever een gratis plan met concrete verbeterpunten.</p>
+            </div>
+            <div class="step">
+                <span class="step-num">2.</span>
+                <h3>Tracking &amp; compliance</h3>
+                <p>Ik richt de volledige tracking en pixel-koppelingen in en toets de opzet aan de AVG/GDPR.</p>
+            </div>
+            <div class="step">
+                <span class="step-num">3.</span>
+                <h3>Rapportage &amp; verbeteren</h3>
+                <p>Je ontvangt een maandelijkse full-funnel rapportage met advies, en ik blijf de meetopzet en compliance monitoren.</p>
+            </div>
+        </div>
     </div>
 </section>
 
